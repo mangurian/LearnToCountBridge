@@ -27,7 +27,7 @@ jobs:
       run: |
         # --onefile creates a standalone binary
         # --windowed prevents a background terminal from opening
-        pyinstaller --onefile --windowed your_script.py 
+        pyinstaller --onefile --windowed LearnToCount.py 
         
     - name: Upload Finished Application
       uses: actions/upload-artifact@v4
