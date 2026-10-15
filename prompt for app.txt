@@ -1,0 +1,14 @@
+The attached excel worksheet tracks the bidding and play of the four players in a game of Contract Bridge.
+TYhe bidding is in the center.  At the end of the bidding The user can enter their estimate of the number of points each player holds.  When play commences, as each player plays a card, the user enters the card played next to the correct suit (C,D,H, or S). If a player plays an ace, king, queen, or jack (A,K,Q,J) the cell under "estimated" is incremented by 4,3,2,or 1.
+
+Create a python app to duplicate the functions of this spreadsheet.  Keep the same look and feel.  In addition, at the start of a hand, the user is asked to enter the dealer for that hand (N,S,E, or W) and the bidding starts there. pop up a window where the user can enter the bid and enter that bid to the next cell on the bidding section. The bidding moves counter clockwise. When the user enters a bid, change the pop-up to the next bidder.  The pop-up should have an option for bidding is over.  When the bidding is over the pop-up changes to a "card played" pop-up.  The first card is played by the player to the left of the highest bidder. The the pop-up should track cards played in a clockwise direction and each card should be entered in the appropriate cell for that player. Keep the pop-ups small enough so that all the items currently on the spreadsheet are visible in the python app.
+
+Make the app as much point and click as possible.  Minimize or eliminate the need for keyboard entry.
+_________________________________________________________________________________________
+Expand the window so everything is bigger and easier to see.  Maybe 1800 pixels across with commensurate. vertical scaling. bidding and play is always clockwise.  do not give a choice.
+There should be two point boxes for each player. One for estimated points and one for points played.  Once set, the estimate boxes do not change.
+Keep the pop-ups movable,but always start it at the lower right.
+The default suit selected should be the suit led as the first card of a trick.  The user is able to change the suit. After a suit change the suit return to the default suit for the next player. Each trick has consists of four cards played.  
+
+The first one to lead at the next trick must be selectable. A good way would be for the user to click on the "box" of the next leader.  pop- up changes to select leader.
+Even better, if DeepSeek can learn enough about the rules of bridge to determine who won the last trick, it would be excellent if the leader of the next trick (the winner of the previous trick) could be selected automatically. Both trump and no-trump contracts must be tracked.
